@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barra de Búsqueda Sin Esquinas</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+  }
+
+  .header-container {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    position: relative; /* Para posicionar el logo */
+    padding: 10px 0; /* Espacio arriba y abajo del contenedor */
+  }
+
+  .logo {
+    height: 110px; /* Altura del logo */
+    width: auto; /* Mantiene la proporción del logo */
+  }
+
+  .logo-link {
+    position: absolute;
+    left: 20px; /* Ajusta según necesidad */
+    top: -20px; /* Mueve la imagen más arriba */
+  }
+
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ajusta el ancho como prefieras */
+    padding-left: 80px; /* Espacio para el logo */
+  }
+
+  .search-bar {
+    width: 50%;
+    max-width: 600px;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px; /* Esquinas redondeadas */
+    outline: none;
+  }
+
+  .search-input:focus {
+    border-color: #a5a5a5;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-container">
+  <a href="index.html" class="logo-link">
+    <img src="img/Logo.png" alt="Logo" class="logo">
+  </a>
+  <div class="search-bar-container">
+    <div class="search-bar">
+      <input type="search" class="search-input" placeholder="Buscar...">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
